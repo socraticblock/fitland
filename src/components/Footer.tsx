@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Footer() {
   const contactInfo = [
     { icon: Phone, label: "Call Us", value: "505 55 82 48" },
-    { icon: Mail, label: "Email Us", value: "fitnessfitland@gmail.com" },
+    { icon: Mail, label: "Email Us", value: "info@fitland.fitness" },
     { icon: MapPin, label: "Visit Us", value: "Pekini N5, Tbilisi, Georgia" },
   ];
 
@@ -60,7 +60,17 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-zinc-500 font-bold uppercase text-xs tracking-widest mb-1">{info.label}</p>
-                    <p className="text-xl font-bold text-white group-hover:text-brand-primary transition-colors">{info.value}</p>
+                    {info.label === "Email Us" ? (
+                      <a href={`mailto:${info.value}`} className="text-xl font-bold text-white hover:text-brand-primary transition-colors">
+                        {info.value}
+                      </a>
+                    ) : info.label === "Call Us" ? (
+                      <a href={`tel:${info.value.replace(/\s+/g, '')}`} className="text-xl font-bold text-white hover:text-brand-primary transition-colors">
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-xl font-bold text-white group-hover:text-brand-primary transition-colors">{info.value}</p>
+                    )}
                   </div>
                 </motion.div>
               ))}
