@@ -108,6 +108,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-8">
+            <a href="https://www.genezisi.com" target="_blank" rel="noopener noreferrer" className="text-zinc-600 hover:text-brand-primary text-[10px] font-bold uppercase tracking-widest transition-colors border-r border-zinc-800 pr-8">Built by Genezisi</a>
             <a href="#" className="text-zinc-600 hover:text-zinc-400 text-[10px] font-bold uppercase tracking-widest transition-colors">Privacy Policy</a>
             <a href="#" className="text-zinc-600 hover:text-zinc-400 text-[10px] font-bold uppercase tracking-widest transition-colors">Terms of Service</a>
           </div>
