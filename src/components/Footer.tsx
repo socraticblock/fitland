@@ -104,7 +104,7 @@ export default function Footer() {
               className="h-24 w-auto object-contain"
             />
             <p className="text-zinc-600 text-xs font-bold uppercase tracking-widest">
-              © 2024 FitLand Fitness. All Rights Reserved.
+              © 2026 FitLand Fitness. All Rights Reserved.
             </p>
           </div>
           <div className="flex gap-8">
